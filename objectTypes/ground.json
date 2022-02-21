@@ -1,14 +1,14 @@
 {
-	"name": "Player",
+	"name": "Ground",
 	"plugin-id": "Sprite",
-	"sid": 162503912181186,
+	"sid": 844472363966320,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Platform",
-			"name": "Platform",
-			"sid": 476090295730414
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 946151616924772
 		}
 	],
 	"effectTypes": [],
@@ -19,29 +19,17 @@
 					{
 						"width": 250,
 						"height": 250,
-						"originX": 0.512,
-						"originY": 0.816,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2965595,
-						"collisionPoly": {
-							"points": [
-								0.3560000610351562,
-								0.03200019836425782,
-								0.6520001220703125,
-								0.03200004577636718,
-								0.6039999389648434,
-								1,
-								0.41600006103515624,
-								1
-							]
-						},
+						"imageSpriteId": 4296530,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 158161855427591,
+				"sid": 873236180233303,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

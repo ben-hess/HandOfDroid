@@ -1,27 +1,32 @@
-
-// Import any other script files here, e.g.:
-// import * as myModule from "./mymodule.js";
+var player;
+var wheel;
 
 runOnStartup(async runtime =>
 {
-	// Code to run on the loading screen.
-	// Note layouts, objects etc. are not yet available.
-	
 	runtime.addEventListener("beforeprojectstart", () => OnBeforeProjectStart(runtime));
 	
 });
 
 async function OnBeforeProjectStart(runtime)
 {
-	// Code to run just before 'On start of layout' on
-	// the first layout. Loading has finished and initial
-	// instances are created and available to use here.
-	
+	player = runtime.getInstanceByUid(2);
+	wheel = runtime.getInstanceByUid(8);
 	runtime.addEventListener("tick", () => Tick(runtime));
 }
 
 function Tick(runtime)
 {
-	// Code to run every tick
-	runtime.getInstanceByUid(2).
+	runtime.layout.scrollX += (player.x - runtime.layout.scrollX) * 5 * runtime.dt;
+	runtime.layout.scrollY += (player.y - runtime.layout.scrollY) * 5 * runtime.dt;
+	wheel.x = player.x;
+	wheel.y = player.y;
+	wheel.angle += player.behaviors.Platform.vectorX / 2000;
+	player.angle = player.behaviors.Platform.vectorX / 1000;
+	
+	if(player.behaviors.Platform.vectorX > 0){
+		player.width = 62.5;
+	}
+	else if(player.behaviors.Platform.vectorX < 0){
+		player.width = -62.5;
+	}
 }
