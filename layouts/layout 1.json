@@ -23,7 +23,7 @@
 								"max-speed": 330,
 								"acceleration": 1200,
 								"deceleration": 800,
-								"jump-strength": 650,
+								"jump-strength": 500,
 								"gravity": 1500,
 								"max-fall-speed": 1000,
 								"double-jump": false,
@@ -200,7 +200,7 @@
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
-						"enable-collisions": true,
+						"enable-collisions": false,
 						"live-preview": false
 					},
 					"uid": 8,
@@ -211,6 +211,64 @@
 						"y": 122,
 						"width": 24.494897427831773,
 						"height": 24.494897427831773,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Hand",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": false,
+						"live-preview": false
+					},
+					"uid": 9,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 154.0823393115316,
+						"y": 121.35230464216049,
+						"width": 17,
+						"height": 17,
+						"originX": 0.008,
+						"originY": 1.54,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dummy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 10,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 446.39567396242444,
+						"y": 79.50329100779948,
+						"width": 73.71762585051925,
+						"height": 73.71762585051925,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

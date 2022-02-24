@@ -45,7 +45,9 @@
 			"Mouse",
 			"Player",
 			"Ground",
-			"Sprite"
+			"Sprite",
+			"Hand",
+			"Dummy"
 		],
 		"subfolders": []
 	},
